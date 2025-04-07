@@ -1,9 +1,9 @@
 server:
-  port: 9003
+  port: 9004
 
 spring:
   application:
-    name: auth_service
+    name: user_service
   datasource:
     url: jdbc:sqlserver://localhost:1433;databaseName=test_khoa_luan_v1;encrypt=true;trustServerCertificate=true
     username: sa
