@@ -1,8 +1,13 @@
 server:
-  port: 9001
+  port: 9002
 
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/userdb
-    username: root
-    password: password
+  application:
+    name: router_server
+  cloud:
+    gateway:
+      routes:
+        - id: service1
+          uri: lb://SERVICE1-SERVICE
+          predicates:
+            - Path=/service1/**
