@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: user_service
+    name: user-service
   datasource:
     url: jdbc:sqlserver://localhost:1433;databaseName=test_khoa_luan_v1;encrypt=true;trustServerCertificate=true
     username: sa

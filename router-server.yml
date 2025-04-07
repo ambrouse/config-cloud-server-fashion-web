@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: router_server
+    name: router-server
   cloud:
     gateway:
       routes:
