@@ -8,7 +8,7 @@ spring:
     gateway:
       routes:
         - id: service-auth
-          uri: lb://AUTH_SERVICE
+          uri: lb://AUTH-SERVICE
           predicates:
             - Path=/auth_service/**
 
