@@ -20,7 +20,8 @@ spring:
 
   cloud:
     discovery:
-      enabled: true  
+      locator:
+          enabled: true  
     feign:
       hystrix:
         enabled: true  
