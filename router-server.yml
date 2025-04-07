@@ -8,11 +8,11 @@ spring:
     gateway:
       routes:
         - id: service-auth
-          uri: lb://AUTH-SERVICE
+          uri: lb://auth-service
           predicates:
             - Path=/auth-service/**
         - id: usser-auth
-          uri: lb://USER-SERVICE
+          uri: lb://user-service
           predicates:
             - Path=/user-service/**
 
