@@ -11,3 +11,13 @@ spring:
           uri: lb://SERVICE1-SERVICE
           predicates:
             - Path=/service1/**
+        - id: service2
+          uri: lb://SERVICE2-SERVICE
+          predicates:
+            - Path=/service2/**
+
+  discovery:
+    enabled: true
+    client:
+      service-url:
+        defaultZone: http://localhost:9001/eureka/
