@@ -21,6 +21,12 @@ spring:
             - Path=/user-service/**
           filters:
             - name: Authentication
+        - id: service-card
+          uri: lb://CARD-SERVICE
+          predicates:
+            - Path=/card-service/**
+          filters:
+            - name: Authentication
 
 eureka:
   client:
