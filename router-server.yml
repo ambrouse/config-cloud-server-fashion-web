@@ -6,18 +6,6 @@ spring:
     name: router-server
   cloud:
     gateway:
-      globalcors:
-          corsConfigurations:
-            '[/**]':
-              allowedOrigins: "http://localhost:9008"  # React app hoặc domain frontend
-              allowedMethods:
-                - GET
-                - POST
-                - PUT
-                - DELETE
-                - OPTIONS
-              allowedHeaders: "*"
-              allowCredentials: true
       routes:
         - id: service-auth
           uri: lb://AUTH-SERVICE
