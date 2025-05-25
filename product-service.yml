@@ -5,7 +5,7 @@ spring:
   application:
     name: product-service
   datasource:
-    url: jdbc:sqlserver://sqlserver:11433;databaseName=test_khoa_luan_v3;encrypt=true;trustServerCertificate=true
+    url: jdbc:sqlserver://sqlserver:1433;databaseName=test_khoa_luan_v3;encrypt=true;trustServerCertificate=true
     username: sa
     password: "@Anhcuto3568oksex[][]"
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
