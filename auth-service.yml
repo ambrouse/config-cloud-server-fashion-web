@@ -5,9 +5,9 @@ spring:
   application:
     name: auth-service
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=test_khoa_luan_v3;encrypt=true;trustServerCertificate=true
+    url: jdbc:sqlserver://sqlserver:1433;databaseName=test_khoa_luan_v3;encrypt=true;trustServerCertificate=true
     username: sa
-    password: 3568
+    password: "@Anhcuto3568oksex[][]"
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
   jpa:
@@ -29,6 +29,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/  
+      defaultZone: http://ereukadocker:8761/eureka/  
   instance:
     prefer-ip-address: true 
